@@ -89,11 +89,11 @@ function ProductList({ wishlist, addToWishlist, addToCart }) {
               <div className="price-container">
                 {product.discountPrice ? (
                   <>
-                    <span className="product-price">${formatPrice(product.discountPrice)}</span>
-                    <span className="original-price">${formatPrice(product.price)}</span>
+                    <span className="product-price">R{formatPrice(product.discountPrice)}</span>
+                    <span className="original-price">R{formatPrice(product.price)}</span>
                   </>
                 ) : (
-                  <span className="product-price">${formatPrice(product.price)}</span>
+                  <span className="product-price">R{formatPrice(product.price)}</span>
                 )}
               </div>
               
